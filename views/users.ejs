@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Socket.io playground</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="title">
+                <h3><%= title %></h3>
+            </div>
+
+            <ul>
+                <% users.forEach(user => { %>
+                <li><%= `ID: ${user.id} - Name: ${user.name}` %></li>
+                <% }); %>
+            </ul>
+        </div>
+    </body>
+</html>
